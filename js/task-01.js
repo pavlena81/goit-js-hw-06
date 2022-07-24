@@ -5,11 +5,13 @@
 //     и количество элементов в категории(всех вложенных в него < li >)
 // const ulEl = document.querySelector('ul#categories');
 // console.log(ulEl);
-const ulEl = document.querySelectorAll(".item");
-const numberUlEl = ulEl.length;
+
+const ulEl = document.querySelectorAll('.item');
+const numberUlEl = ulEl.childElementCount;
 console.log('Number of categories: ${numberUlEl}');
 
-const nameForUlEl = ulEl.forEach((element) => {
+ulEl.forEach((element) => {
+    
     console.log('Category: ${element.firstElementChild.textContent}');
     console.log('Element: ${element.lastElementChild.Children.length}');
-})
+});
