@@ -6,12 +6,13 @@
 // const ulEl = document.querySelector('ul#categories');
 // console.log(ulEl);
 
-const ulEl = document.querySelectorAll('.item');
-const numberUlEl = ulEl.childElementCount;
-console.log('Number of categories: ${numberUlEl}');
+const ulEl = document.querySelectorAll("li.item");
+//  const numberOfUlEl = ulEl.length;
+ const numberUlEl = ulEl.childElementCount;
+console.log(`Number of categories: ${numberUlEl}`);
 
 ulEl.forEach((element) => {
     
-    console.log('Category: ${element.firstElementChild.textContent}');
-    console.log('Element: ${element.lastElementChild.Children.length}');
-});
+    console.log(`Category: ${element.firstElementChild.textContent}`);
+    console.log(`Category: ${element.lastElementChild.children.length}`);
+ });
