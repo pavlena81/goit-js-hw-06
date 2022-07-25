@@ -28,8 +28,6 @@ function onFormSubmit(event) {
     // event.target.elements;
     emailValue, passwordValue
      console.log({ emailValue, passwordValue });
-
-   
     
     
     // console.dir(event.currentTarget);
