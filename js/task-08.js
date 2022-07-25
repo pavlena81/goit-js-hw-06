@@ -22,11 +22,12 @@ function onFormSubmit(event) {
 
     const emailValue = email.value;
     const passwordValue = password.value;
-    if (emailValue || passwordValue === " ") {
+    if (emailValue === "" || passwordValue === "") {
        alert(`все поля должны быть заполнены`)
     } 
-    event.target.elements;
-        console.log({ emailValue, passwordValue });
+    // event.target.elements;
+    emailValue, passwordValue
+     console.log({ emailValue, passwordValue });
 
    
     
@@ -37,7 +38,7 @@ function onFormSubmit(event) {
         
     //     console.log("name:", name);
     //     console.log("value:", value);
-    // 
+    
     // });    
-    formEl.resert();
+    // formEl.resert;
 };
