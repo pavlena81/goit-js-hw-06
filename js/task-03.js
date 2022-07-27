@@ -28,13 +28,13 @@ const images = [
 // ===========================================================
 const listEl = document.querySelector(".gallery");
 const makeGalleryListItems = images.map(image  => 
-  `<li class="list-item"><img src="${image.url}" alt="${image.alt}" width="320"></li>`);
+  `<li class="list-item"><img src="${image.url}" alt="${image.alt}" width="320"></li>`).join(" ");
 
 
 console.log(makeGalleryListItems);
 
 // Adding all the markup in one operation
- listEl.insertAdjacentHTML('afterbegin', makeGalleryListItems.join(" "));
+ listEl.insertAdjacentHTML('afterbegin', makeGalleryListItems);
 
 
 
