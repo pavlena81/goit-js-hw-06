@@ -17,7 +17,6 @@ formEl.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(event) {
     event.preventDefault();
-
      const { email, password } = event.target.elements;
 
     const emailValue = email.value;
@@ -25,9 +24,9 @@ function onFormSubmit(event) {
     if (emailValue === "" || passwordValue === "") {
        alert(`все поля должны быть заполнены`)
     } 
-    // event.target.elements;
-    emailValue, passwordValue
-     console.log({ emailValue, passwordValue });
+    const form = (emailValue, passwordValue);
+   console.log(form);
+    //  console.log({ emailValue, passwordValue });
     
     
     // console.dir(event.currentTarget);
@@ -38,5 +37,5 @@ function onFormSubmit(event) {
     //     console.log("value:", value);
     
     // });    
-    // formEl.resert;
+    formEl.resert;
 };
