@@ -40,7 +40,7 @@ const createBoxes = (amount) => {
 
 for (let i = 0; i < amount; i += 1) {
         const boxSize = 30;
-        let growBoxSize = boxSize + i* 10;
+        let growBoxSize = boxSize + i * 10;
         const boxItem = `<div style='width:${growBoxSize}px;
     height:${growBoxSize}px; background-color:${getRandomHexColor()}' >
     </div>`;
