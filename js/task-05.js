@@ -12,21 +12,25 @@ console.log(`Input: ${inputEl.value}`);
  
 
 function onInputChange (event) {
-  // event.preventDefault();
-   if (inputEl.value === "") {
+  // event.preventDefault();   
+  if (inputEl.value === "") {
     outputEl.textContent = `Anonymous`;
     return console.log("Please fill in  the fields!");
   }
-  outputEl.textContent = event.currentTarget.value.trim(); 
+  outputEl.textContent = event.currentTarget.value.trim();
+
+    
+ }
+console.log(inputEl);
+//  outputEl.textContent = event.currentTarget.value.trim()
+//     ? event.currentTarget.value.trim()
+//      : `Anonymous`;
+//     return console.log("Please fill in  the fields!");
+//  
  
-}
-
-  console.log(inputEl);
 
 
-// ==========================================
-
-
-
+  //  =============================================
+  
 
 
