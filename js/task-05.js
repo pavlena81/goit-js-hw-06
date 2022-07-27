@@ -17,7 +17,7 @@ function onInputChange (event) {
     outputEl.textContent = `Anonymous`;
     return console.log("Please fill in  the fields!");
   }
-  outputEl.textContent = event.currentTarget.value; 
+  outputEl.textContent = event.currentTarget.value.trim(); 
  
 }
 
