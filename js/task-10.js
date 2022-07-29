@@ -44,10 +44,10 @@ for (let i = 0; i < amount; i += 1) {
         const boxItem = `<div style='width:${growBoxSize}px;
     height:${growBoxSize}px; background-color:${getRandomHexColor()}' >
     </div>`;
-  boxArr.push(boxItem);
-   ref.boxesEl.insertAdjacentHTML('afterbegin', boxArr.join(''));
-  // ref.boxesEl.append(...boxArr);
-}  
+  boxArr.push(boxItem);   
+  
+  }  
+  ref.boxesEl.insertAdjacentHTML('afterbegin', boxArr.join(''));
 }
 
 const destroyBoxes = () => {

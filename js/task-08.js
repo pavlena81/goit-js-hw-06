@@ -17,14 +17,17 @@ formEl.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(event) {
     event.preventDefault();
-     const { email, password } = event.target.elements;
+    const { email, password } = event.target.elements;
 
     const emailValue = email.value;
     const passwordValue = password.value;
     if (emailValue === "" || passwordValue === "") {
-       alert(`все поля должны быть заполнены`)
-    } 
-    const form = (emailValue, passwordValue);
+        alert(`все поля должны быть заполнены`)
+    }
+    const form = {
+        emailValue: email,
+        passwordValue: password,    
+   }
    console.log(form);
     //  console.log({ emailValue, passwordValue });
     
